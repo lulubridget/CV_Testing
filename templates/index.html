@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lu Wang</title>
+    <link rel="stylesheet" href="static/Styles.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+  <div class="top-container">
+    <img class="top-cloud" src="static/cloud.png" alt="cloud-img">
+    <h1>I'm Lu</h1>
+    <h2>a Product Manager</h2>
+    <img class="bottom-cloud" src="static/cloud.png" alt="cloud-img">
+    <img src="static/mountain.png" alt="mountain-img">
+  </div>
+  <div class="middle-container">
+  <div class="profile">
+    <img class="profile-img"src="static/Icon.png" alt="profile Image">
+    <h2>Jobs {{name}} Want as a kid</h2>
+    <div> 
+      <div>
+        {%for job in idealJobs%}
+          {% include 'idealJobs.html' %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="skills">
+    <h2>{{name}} Skills</h2>
+    <div class="skill-row">
+      <img class="Skill-Img1" src="static/Skill.png" alt="skill imgage">
+      <h3>Deisgn what you want</h3>
+      <p>I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
+    </div>
+    <br>
+    <div class="skill-row">
+      <img class="Skill-Img2" src="static/Skill.png" alt="skill imgage">
+      <h3>Develop what you need</h3>
+      <p>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>If you love coding as much as I do</h3>
+    <p>Please follow me in bellow contact</p>
+    <a class="btn" href="lubridgetwang@gmail.com">CONTACT ME</a>
+  </div>
+</div>
+
+
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+  <a class="footer-link" href="https://twitter.com/">Twitter</a>
+  <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+  
+</div>
+
+
+  </body>
+</html>
